@@ -1,9 +1,8 @@
-import os
 from zhipuai import ZhipuAI
 import base64
 
 
-API_KEY = os.getenv("api_key")
+API_KEY = your_api_key_here
 client = ZhipuAI(api_key=API_KEY)
 
 PROMPT = """请复述视频中人物所说的内容，要求：
@@ -54,3 +53,4 @@ def process_video(video_path):
 if __name__ == "__main__":
     video_path = "🐧这种企鹅最精了🐧.mp4"
     process_video(video_path)
+
